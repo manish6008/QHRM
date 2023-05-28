@@ -12,7 +12,9 @@ CREATE PROCEDURE GetAllProducts
 AS BEGIN select * from AddProduct; END
 
 ii)CREATE PROCEDURE ProductViewById @SN int AS BEGIN select * from AddProduct where SN = @SN; END
+
 iii)CREATE PROCEDURE ShowProduct @SN int AS BEGIN select * from AddProduct where SN = @SN; END
+
 iv)CREATE PROCEDURE ProductDeleteById @SN int AS BEGIN Delete from AddProduct where SN = @SN; END
 
 4.Check for connection string in DapperOrm Model 
